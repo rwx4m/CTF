@@ -1,0 +1,71 @@
+  3           0 LOAD_CONST               1 (<code object <lambda> at 0x0000018839EF5190, file "chall.py", line 3>)
+              2 LOAD_CONST               2 ('check.<locals>.<lambda>')
+              4 MAKE_FUNCTION            0
+              6 STORE_FAST               0 (___)
+
+  4           8 LOAD_GLOBAL              0 (input)
+             10 LOAD_CONST               3 ('Welcome to warmup, no XOR RE here and please give me the flegg >> ')
+             12 CALL_FUNCTION            1
+             14 STORE_FAST               1 (______)
+
+  5          16 LOAD_FAST                0 (___)
+             18 LOAD_FAST                1 (______)
+             20 LOAD_METHOD              1 (encode)
+             22 CALL_METHOD              0
+             24 CALL_FUNCTION            1
+             26 LOAD_CONST               4 (b'\x11\x08C~49?\x92\x984?$\x92\x1d4n~$\x92\x1d4n\x19$\x92\x1d4~9\x1d4\x089\x1dC~\xc0\x1d\\?$9\x91')
+             28 COMPARE_OP               3 (!=)
+             30 POP_JUMP_IF_FALSE       42
+
+  6          32 LOAD_GLOBAL              2 (print)
+             34 LOAD_CONST               5 ('Wrong!')
+             36 CALL_FUNCTION            1
+             38 POP_TOP
+             40 JUMP_FORWARD             8 (to 50)
+
+  8     >>   42 LOAD_GLOBAL              2 (print)
+             44 LOAD_CONST               6 ('Correct! See you in the next elimination round :>')
+             46 CALL_FUNCTION            1
+             48 POP_TOP
+        >>   50 LOAD_CONST               0 (None)
+             52 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x0000018839EF5190, file "chall.py", line 3>:
+  3           0 LOAD_GLOBAL              0 (bytes)
+              2 LOAD_CONST               1 (<code object <genexpr> at 0x0000018839EF50E0, file "chall.py", line 3>)
+              4 LOAD_CONST               2 ('check.<locals>.<lambda>.<locals>.<genexpr>')
+              6 MAKE_FUNCTION            0
+              8 LOAD_FAST                0 (____)
+             10 GET_ITER
+             12 CALL_FUNCTION            1
+             14 CALL_FUNCTION            1
+             16 RETURN_VALUE
+
+Disassembly of <code object <genexpr> at 0x0000018839EF50E0, file "chall.py", line 3>:
+  3           0 LOAD_FAST                0 (.0)
+        >>    2 FOR_ITER                46 (to 50)
+              4 STORE_FAST               1 (__)
+              6 LOAD_FAST                1 (__)
+              8 LOAD_CONST               0 (13371337)
+             10 LOAD_CONST               1 (2024)
+             12 LOAD_FAST                1 (__)
+             14 BINARY_SUBTRACT
+             16 BINARY_MULTIPLY
+             18 LOAD_CONST               2 (2025)
+             20 LOAD_FAST                1 (__)
+             22 BINARY_SUBTRACT
+             24 BINARY_MULTIPLY
+             26 BINARY_ADD
+             28 LOAD_CONST               3 (199)
+             30 BINARY_MODULO
+             32 LOAD_FAST                1 (__)
+             34 LOAD_CONST               4 (1)
+             36 BINARY_ADD
+             38 LOAD_CONST               5 (25)
+             40 BINARY_MODULO
+             42 BINARY_ADD
+             44 YIELD_VALUE
+             46 POP_TOP
+             48 JUMP_ABSOLUTE            2
+        >>   50 LOAD_CONST               6 (None)
+             52 RETURN_VALUE
