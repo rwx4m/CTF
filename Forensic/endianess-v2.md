@@ -56,10 +56,8 @@ Selanjutnya, menggunakan `xxd` untuk melihat isi file dalam format heksadesimal:
 ```
 Pada byte pertama, `e0ff d8ff` yang tampaknya tidak sesuai dengan standar file JPEG yang seharusnya `ff d8 ff`. Terlihat juga bahwa urutan byte file ini terbalik atau salah susun.
 
-## Menyelesaikan Challenge - Endianness Swap
+## Endianness Swap
 Karena file ini tampaknya memiliki masalah pada urutan byte, saya akan mencoba untuk membalikkan byte-nya (swap endianess).
-
-1. Proses Swap Endianess
 Saya akan membalikkan byte setiap 4 byte, yang berarti 4 byte pertama akan dikelompokkan, membalikkan urutannya, dan melanjutkan ke kelompok berikutnya.
 
 CONTOH:
