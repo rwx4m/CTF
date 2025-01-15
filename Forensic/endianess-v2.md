@@ -82,7 +82,7 @@ Saya menggunakan `Cyberchef` untuk membalikkan urutan byte dan menyimpannya ke d
 
 ![Screenshot 2025-01-15 115035](https://github.com/user-attachments/assets/15922fa2-50b8-4054-a379-1b29900d17a3)
 
-Setelah melakukan ini, save file format 'jpg' dan flag akan terlihat pada file gambar tersebut.
+Setelah melakukan ini, save file format `jpg` dan flag akan terlihat pada file gambar tersebut.
 
 ```bash
 ┌──(rwx4m㉿Home)-[~/Downloads]
@@ -100,4 +100,4 @@ Setelah melakukan ini, save file format 'jpg' dan flag akan terlihat pada file g
 ```
 Sekarang, byte pertama adalah `ffd8`, yang merupakan Standar untuk file JPEG yang valid.
 
-*Silahkan, jika ingin mencoba dan pelajari sendiri*
+*Silahkan mencoba dan pelajari! Jangan hanya copas tapi tidak mendapat ilmunya*
