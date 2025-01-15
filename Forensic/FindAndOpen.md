@@ -31,6 +31,9 @@ Disini terlihat seperti base64.
 
 copy hex kemudian convert ke base64 menggunakan Cyberchef:
 
+*Cara Lain*
+> echo "(HEX)" | xxd -r -p | base64 -d
+
 ## Potongan Pertama:
 
 HEX
