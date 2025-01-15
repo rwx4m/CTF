@@ -1,8 +1,11 @@
+# QR-Acak
+
+**Category:** Forensic
 
 ## Deskripsi Tantangan
-Pada challenge ini, saya diberikan sebuah file gambar yang berisi QR Code yang tampak tidak teratur atau terdistorsi. Tugas saya adalah memperbaiki gambar tersebut sehingga dapat dibaca oleh QR code scanner dan mendapatkan flag dari QR tersebut.
+>Pada challenge ini, saya diberikan sebuah file gambar yang berisi QR Code yang tampak tidak teratur atau terdistorsi. Tugas saya adalah memperbaiki gambar tersebut sehingga dapat dibaca oleh QR code scanner dan mendapatkan flag dari QR tersebut.
 ![qr](https://github.com/user-attachments/assets/f85a263c-1a8e-44a7-a276-7d72c52ffb5f)
-
+---
 ## Analisis Awal
 Masalah utama adalah QR Code terlihat terdistorsi secara horizontal, di mana setiap baris sepertinya dipindahkan atau dimodifikasi.
 Saya menduga bahwa baris-baris QR Code dipindahkan ke posisi yang salah atau ada pola tertentu dalam distorsinya. Oleh karena itu, langkah pertama adalah menganalisis pola distorsi.
