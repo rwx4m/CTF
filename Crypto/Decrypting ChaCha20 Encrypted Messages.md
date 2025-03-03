@@ -1,6 +1,6 @@
 # Decrypting ChaCha20 Encrypted Messages
 ## Deskripsi
-Tantangan ini mengharuskan kita untuk mendekripsi pesan terenkripsi yang berasal dari sistem komunikasi rahasia musuh. Kita mendapatkan file source.py yang digunakan untuk mengenkripsi pesan serta hasil enkripsi dalam out.txt. Dengan menggunakan metode kriptografi yang sesuai, kita dapat membalikkan proses enkripsi untuk memperoleh FLAG yang disembunyikan.
+Tantangan ini mengharuskan untuk mendekripsi pesan terenkripsi yang berasal dari sistem komunikasi rahasia musuh. Terdapat file source.py yang digunakan untuk mengenkripsi pesan serta hasil enkripsi dalam out.txt. Dengan menggunakan metode kriptografi yang sesuai, proses membalikkan enkripsi dapat dilakukan untuk memperoleh FLAG yang disembunyikan.
 
 ----
 
@@ -57,7 +57,7 @@ Data ini terdiri dari:
 - Ciphertext dari FLAG yang harus didekripsi
 ----
 ### Strategi Dekripsi
-Karena kita memiliki plaintext asli dari pesan pertama, kita dapat melakukan serangan Known Plaintext Attack (KPA) terhadap ChaCha20. Stream cipher seperti ChaCha20 menghasilkan keystream yang XOR dengan plaintext untuk menghasilkan ciphertext. Oleh karena itu, kita dapat:
+Karena memiliki plaintext asli dari pesan pertama, saya dapat melakukan serangan Known Plaintext Attack (KPA) terhadap ChaCha20. Stream cipher seperti ChaCha20 menghasilkan keystream yang XOR dengan plaintext untuk menghasilkan ciphertext. Oleh karena itu, saya dapat:
 ##### Menemukan keystream dengan plaintext yang diketahui
 - XOR antara ciphertext dan plaintext akan menghasilkan keystream.
 ##### Menggunakan keystream yang sama untuk mendekripsi FLAG
